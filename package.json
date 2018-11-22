@@ -1,5 +1,6 @@
 {
-  "name": "restaurant-reviews-app",
+  "homepage": "https://eb-restaurant-app.herokuapp.com",
+  "name": "Restaurant_Reviews_App_Web",
   "version": "1.0.0",
   "description": "--- #### _Material Project - Restaurant Reviews_",
   "main": "index.js",
