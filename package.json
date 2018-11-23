@@ -30,6 +30,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+   "main": "server.js",
+  "scripts": {
+    "test": "gulp tests",
+    "start": "node server.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ebisLab/Restaurant_Reviews_App_Web.git"
