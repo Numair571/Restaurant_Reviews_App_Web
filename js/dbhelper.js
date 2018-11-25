@@ -8,9 +8,15 @@ class DBHelper {
    * Change this to restaurants.json file location on your server.
    */
   static get DATABASE_URL() {
-    const port = 8000 // Change this to your server port
-    return `http://localhost:${port}/data/restaurants.json`;
-  }
+       let dataURL = "";
+       if (location.protocol.indexOf("https") !== -1) {
+             dataURL = `https://eb-restaurant-app.herokuapp.com/data/restaurants.json`;
+       } else {
+             dataURL = `http://eb-restaurant-app.herokuapp.com/data/restaurants.json`;
+       }
+
+       return dataURL;
+   }
 
   /**
    * Fetch all restaurants.
